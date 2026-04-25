@@ -72,25 +72,3 @@
     *   Command: `chmod +x backup.sh`
 4.  **Run it:**
     *   Command: `./backup.sh`
-
----
-
-### Instructor Notes for Hour 2:
-
-#### 1. The "Everything is a File" Concept
-Explain to students that in Linux, even a running process or a hardware hard drive is represented as a file. This is why commands like `cat` or `grep` are so powerful—they work on almost everything.
-
-#### 2. The Pipe (`|`) Analogy
-Describe the pipe as a physical pipe. You are pouring the "water" (data) from one bucket (command) into another. This is the "Linux Philosophy": Small programs that do one thing well, linked together.
-
-#### 3. Sudo Caution
-Warn students that `sudo` (SuperUser Do) is like "running as Administrator." It allows you to delete the entire operating system. Emphasize: **"Think before you hit Enter with sudo."**
-
-#### 4. Troubleshooting common issues:
-*   **"Permission Denied":** If a student can't run their script in Phase 4, they skipped the `chmod +x` step.
-*   **"Command not found":** Usually a typo. Remind them that `grep` is not `Grep`.
-*   **Stuck in an editor:** If they get stuck in `nano`, it's `Ctrl+X`. If they accidentally open `vi`, tell them to type `:q!` and hit Enter.
-
-#### 5. Extension Task (If they finish early):
-Ask them to modify their `backup.sh` script to create a compressed file using the `tar` command:
-`tar -czvf backup.tar.gz ~/lab_work`
